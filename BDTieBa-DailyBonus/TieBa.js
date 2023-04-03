@@ -9,17 +9,6 @@
 获取Cookie后, 请将Cookie脚本禁用并移除主机名，以免产生不必要的MITM.
 脚本将在每天上午9:00执行, 您可以修改执行时间。
 
-************************
-Surge 4.2.0+ 脚本配置:
-************************
-
-[Script]
-贴吧签到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
-
-贴吧获取Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
-
-[MITM] 
-hostname= c.tieba.baidu.com
 
 ************************
 QuantumultX 本地脚本配置:
@@ -30,25 +19,8 @@ QuantumultX 本地脚本配置:
 0 9 * * * TieBa.js
 
 [rewrite_local]
-# 获取Cookie
-https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header TieBa.js
 
-[mitm] 
-hostname= c.tieba.baidu.com
 
-************************
-Loon 2.1.0+ 脚本配置:
-************************
-
-[Script]
-# 贴吧签到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
-
-# 获取Cookie
-http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
-
-[Mitm] 
-hostname= c.tieba.baidu.com
 
 
 */
