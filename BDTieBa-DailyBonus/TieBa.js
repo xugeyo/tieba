@@ -15,9 +15,9 @@ Surge 4.2.0+ 脚本配置:
 ************************
 
 [Script]
-贴吧签到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+贴吧签到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
 
-贴吧获取Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+贴吧获取Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
 
 [MITM] 
 hostname= c.tieba.baidu.com
@@ -43,10 +43,10 @@ Loon 2.1.0+ 脚本配置:
 
 [Script]
 # 贴吧签到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
 
 # 获取Cookie
-http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
 
 [Mitm] 
 hostname= c.tieba.baidu.com
