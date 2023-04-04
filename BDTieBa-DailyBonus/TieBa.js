@@ -15,7 +15,7 @@ Surge 4.2.0+ 脚本配置:
 ************************
 
 [Script]
-贴吧签到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
+贴吧签到 = type=cron,cronexp=0 0 0 * * ? *,script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
 
 贴吧获取Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
 
@@ -28,7 +28,7 @@ QuantumultX 本地脚本配置:
 
 [task_local]
 # 贴吧签到
-0 9 * * * TieBa.js
+0 0 0 * * ? * TieBa.js
 
 [rewrite_local]
 # 获取Cookie
@@ -43,7 +43,7 @@ Loon 2.1.0+ 脚本配置:
 
 [Script]
 # 贴吧签到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
+cron "0 0 0 * * ? *" script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
 
 # 获取Cookie
 http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/xugeyo/tieba/master/BDTieBa-DailyBonus/TieBa.js
